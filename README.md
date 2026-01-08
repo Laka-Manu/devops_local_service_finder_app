@@ -1,7 +1,7 @@
 # devops_local_service_finder_app
 
 ## Group Information
-- **Student 1:** [Sandaru Amarasekara] - [] - Role: [Role Name]
+- **Student 1:** [Sandaru Amarasekara] - [ITBIN-2313-0008] - Role: [Role Name]
 - **Student 2:** [Lakshani Manusha] - [ITBIN-2313-0063] - Role: [Role Name]
 - **Student 3:** [Ranasinghe Arachchige Shashini Ruwanthika] - [itbin-2313-0095] - Role: [Role Name]
 
