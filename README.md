@@ -6,7 +6,7 @@
 - **Student 3:** [Ranasinghe Arachchige Shashini Ruwanthika] - [itbin-2313-0095] - Role: [Role Name]
 
 ## Project Description
-[Brief description of what your application does]
+[Local Service Finder is a web-based platform that helps users discover and connect with trusted local service providers. Users can search for electricians, plumbers, and mechanics in their area, view ratings, and contact them directly via phone or WhatsApp.git]
 
 ## Live Deployment
 🔗 **Live URL:** [Your deployed application URL]
