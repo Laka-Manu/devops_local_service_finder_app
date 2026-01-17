@@ -9,18 +9,21 @@
 [Local Service Finder is a web-based platform that helps users discover and connect with trusted local service providers. Users can search for electricians, plumbers, and mechanics in their area, view ratings, and contact them directly via phone or WhatsApp.git]
 
 ## Live Deployment
-🔗 **Live URL:** [Your deployed application URL]
+🔗 **Live URL:** https://your-project.vercel.app
 
 ## Technologies Used
 - HTML5, CSS3, JavaScript
-- [Any frameworks/libraries used]
+- JSON for data storage
 - GitHub Actions
-- [Deployment platform name]
+- Vercel for deployment
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Search services by name, category, or location
+- Filter by service type (Electrician, Plumber, Mechanic,etc.)
+- View provider ratings and experience
+- Direct call functionality
+- WhatsApp contact integration
+- Responsive design for mobile and desktop
 
 ## Branch Strategy
 We implemented the following branching strategy:
