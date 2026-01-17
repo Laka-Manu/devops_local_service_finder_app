@@ -1,0 +1,232 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #f4f4f4; 
+} 
+ 
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+} 
+ 
+header { 
+    background: linear-gradient(135deg, #acb7e7 0%, #426eb5 100%); 
+    color: white; 
+    padding: 2rem 0; 
+    text-align: center; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+} 
+ 
+header h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem; 
+} 
+ 
+header p { 
+    font-size: 1.1rem; 
+    opacity: 0.9; 
+} 
+ 
+main { 
+    padding: 2rem 0; 
+} 
+ 
+.search-section { 
+    background: white; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    margin-bottom: 2rem; 
+} 
+ 
+.search-box { 
+    display: flex; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+} 
+ 
+#searchInput { 
+    flex: 1; 
+    min-width: 250px; 
+    padding: 12px 20px; 
+    font-size: 1rem; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    transition: border-color 0.3s; 
+} 
+ 
+#searchInput:focus { 
+    outline: none; 
+    border-color: #6c83ea; 
+} 
+ 
+#categoryFilter { 
+    padding: 12px 20px; 
+    font-size: 1rem; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    background: white; 
+    cursor: pointer; 
+    transition: border-color 0.3s; 
+} 
+ 
+#categoryFilter:focus { 
+    outline: none; 
+    border-color: #5c73d6; 
+} 
+ 
+.services-section { 
+    margin-bottom: 2rem; 
+} 
+ 
+.services-section h2 { 
+    color: #333; 
+    margin-bottom: 1.5rem; 
+    font-size: 1.8rem; 
+} 
+ 
+.services-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1.5rem; 
+} 
+ 
+.service-card { 
+    background: white; 
+    padding: 1.5rem; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+} 
+ 
+.service-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15); 
+} 
+ 
+.service-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start; 
+    margin-bottom: 1rem; 
+} 
+ 
+.service-card h3 { 
+    color: #667eea; 
+    font-size: 1.3rem; 
+    margin-bottom: 0.3rem; 
+} 
+ 
+.service-category { 
+    background: #667eea; 
+    color: white; 
+    padding: 4px 12px; 
+    border-radius: 20px; 
+    font-size: 0.85rem; 
+    text-transform: capitalize; 
+} 
+ 
+.service-info { 
+    margin: 1rem 0; 
+} 
+ 
+.service-info p { 
+    margin-bottom: 0.5rem; 
+    color: #666; 
+} 
+ 
+.rating { 
+    color: #ffa500; 
+    font-size: 1.1rem; 
+    margin: 0.5rem 0; 
+} 
+ 
+.service-contact { 
+    display: flex; 
+    gap: 0.5rem; 
+    margin-top: 1rem; 
+} 
+ 
+.btn { 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: 0.95rem; 
+    transition: background-color 0.3s; 
+    text-decoration: none; 
+    display: inline-block; 
+    text-align: center; 
+} 
+ 
+.btn-primary { 
+    background: #667eea; 
+    color: white; 
+} 
+ 
+.btn-primary:hover { 
+    background: #5568d3; 
+} 
+ 
+.btn-secondary { 
+    background: #25D366; 
+    color: white; 
+} 
+ 
+.btn-secondary:hover { 
+    background: #1fb855; 
+} 
+ 
+.map-section { 
+    background: white; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+} 
+ 
+.map-section h2 { 
+    color: #333; 
+    margin-bottom: 1rem; 
+    font-size: 1.8rem; 
+} 
+ 
+.map-container { 
+    width: 100%; 
+    height: 400px; 
+    background: #e0e0e0; 
+    border-radius: 8px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #666; 
+} 
+ 
+footer { 
+    background: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 1.5rem 0; 
+    margin-top: 3rem; 
+} 
+ 
+@media (max-width: 768px) { 
+    header h1 { 
+        font-size: 2rem; 
+    } 
+     
+    .search-box { 
+        flex-direction: column; 
+    } 
+     
+    .services-grid { 
+        grid-template-columns: 1fr; 
+    } 
+} 
