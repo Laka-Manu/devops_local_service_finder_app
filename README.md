@@ -9,15 +9,16 @@
 [Local Service Finder is a web-based platform that helps users discover and connect with trusted local service providers. Users can search for electricians, plumbers, and mechanics in their area, view ratings, and contact them directly via phone or WhatsApp.git]
 
 ## Live Deployment
-🔗 **Live URL:** [Your deployed application URL]
+🔗 **Live URL:** https://your-project.vercel.app
 
 ## Technologies Used
 - HTML5, CSS3, JavaScript
-- [Any frameworks/libraries used]
+- JSON for data storage
 - GitHub Actions
-- [Deployment platform name]
+- Vercel for deployment
 
 ## Features
+<<<<<<< HEAD
 
 - Search services by name, category, or location 
 - Filter by service type (Electrician, Plumber, Mechanic) 
@@ -25,6 +26,14 @@
 - Direct call functionality 
 -  WhatsApp contact integration 
 - Responsive design for mobile and desktop 
+=======
+- Search services by name, category, or location
+- Filter by service type (Electrician, Plumber, Mechanic,etc.)
+- View provider ratings and experience
+- Direct call functionality
+- WhatsApp contact integration
+- Responsive design for mobile and desktop
+>>>>>>> f9f7a689719f46ccb366e35d95e47b0f399e608c
 
 ## Branch Strategy
 We implemented the following branching strategy:
@@ -36,19 +45,23 @@ We implemented the following branching strategy:
 
 ## Individual Contributions
 
-### [Student 1 ]
+### [Lakshani Manusha] - DevOps/Release Manager 
 - Repository setup and configuration
 - GitHub Actions CI/CD pipeline implementation
-- Deployment setup and management
-- [List specific commits/features]
+- Vercel deployment setup and management 
+- Branch protection and merge management 
+- Created .github/workflows/ci.yml and deploy.yml 
+- Managed pull request merges
 
-### [Student 2 Name]
-- [List specific features developed]
-- [List specific commits/contributions]
+### [Sandaru Amarasekara] - Backend Developer 
+- Created service provider data structure (services.json) 
+- Implemented search and filter functionality 
+- Developed rating display system 
+- Created main application logic (main.js) 
+- Implemented data loading and error handling
 
-### [Student 3 Name]
-- [List specific features developed]
-- [List specific commits/contributions]
+### [Ranasinghe Arachchige Shashini Ruwanthika] - Frontend Developer
+- 
 
 ## Setup Instructions
 
