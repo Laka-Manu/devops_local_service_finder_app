@@ -2,32 +2,42 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ main, develop, feature/* ]
+    branches:
+      - main
+      - develop
+      - feature/*
   pull_request:
-    branches: [ main, develop ]
+    branches:
+      - main
+      - develop
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Verify project structure
+        run: |
+          echo "Checking required files..."
+          test -f src/index.html || { echo "Missing index.html"; exit 1; }
+          test -f src/styles/style.css || { echo "Missing style.css"; exit 1; }
+          test -f src/scripts/app.js || { echo "Missing app.js"; exit 1; }
+          test -f src/data/services.json || { echo "Missing services.json"; exit 1; }
+          echo "All required files exist "
 
-    - name: Install dependencies
-      run: npm install
+      - name: Validate HTML file
+        run: |
+          grep -q "<!DOCTYPE html>" src/index.html || { echo "index.html missing <!DOCTYPE html>"; exit 1; }
+          echo "HTML validation passed "
 
-    - name: Run linter
-      run: npm run lint || echo "Lint check completed"
+      - name: Validate JSON file
+        run: |
+          python3 -m json.tool src/data/services.json > /dev/null || { echo "Invalid JSON in services.json"; exit 1; }
+          echo "JSON is valid "
 
-    - name: Build project
-      run: npm run build || echo "Build completed"
-
-    - name: Run tests
-      run: npm test || echo "Tests completed"
+      - name: CI completed
+        run: echo "CI Pipeline finished successfully "
 
