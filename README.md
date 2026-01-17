@@ -18,9 +18,13 @@
 - [Deployment platform name]
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+
+- Search services by name, category, or location 
+- Filter by service type (Electrician, Plumber, Mechanic) 
+- View provider ratings and experience 
+- Direct call functionality 
+-  WhatsApp contact integration 
+- Responsive design for mobile and desktop 
 
 ## Branch Strategy
 We implemented the following branching strategy:
