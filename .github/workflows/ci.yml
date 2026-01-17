@@ -2,15 +2,27 @@ name: CI Pipeline
 
 on:
   push:
+<<<<<<< HEAD
     branches: [ main, develop, feature/* ]
   pull_request:
     branches: [ main, develop ]
+=======
+    branches:
+      - main
+      - develop
+      - feature/*
+  pull_request:
+    branches:
+      - main
+      - develop
+>>>>>>> c826b0cfe811c8d0484baffceec67597fb15d738
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
     - name: Checkout code
       uses: actions/checkout@v3
 
@@ -31,3 +43,31 @@ jobs:
     - name: Run tests
       run: npm test || echo "Tests completed"
 
+=======
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Verify project structure
+      run: |
+        echo "Checking required files..."
+        test -f src/index.html
+        test -f src/styles/style.css
+        test -f src/scripts/app.js
+        test -f src/data/services.json
+        echo "All required files exist "
+
+    - name: Validate HTML file
+      run: |
+        echo "Validating HTML..."
+        grep -q "<!DOCTYPE html>" src/index.html
+        echo "HTML validation passed "
+
+    - name: Validate JSON file
+      run: |
+        echo "Validating JSON..."
+        python -m json.tool src/data/services.json > /dev/null
+        echo "JSON is valid "
+
+    - name: CI completed successfully
+      run: echo "CI Pipeline finished successfully "
+>>>>>>> c826b0cfe811c8d0484baffceec67597fb15d738

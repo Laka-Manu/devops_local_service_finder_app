@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 name: Deploy to Production
 
 on:
   push:
     branches: [ main ]
+=======
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main
+>>>>>>> c826b0cfe811c8d0484baffceec67597fb15d738
 
 jobs:
   deploy:
@@ -18,4 +27,8 @@ jobs:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         vercel-org-id: ${{ secrets.ORG_ID }}
         vercel-project-id: ${{ secrets.PROJECT_ID }}
+<<<<<<< HEAD
 
+=======
+        working-directory: ./src
+>>>>>>> c826b0cfe811c8d0484baffceec67597fb15d738
