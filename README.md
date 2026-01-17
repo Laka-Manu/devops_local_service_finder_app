@@ -28,13 +28,15 @@
 
 ## Branch Strategy
 We implemented the following branching strategy:
-- `main` - Production branch
+- `main` - Production branch (protected, auto-deploys)
 - `develop` - Integration branch
-- `feature/*` - Feature development branches
+- `feature/ui-design` - Frontend UI components 
+- `feature/service-data`- Backend data and search functionality 
+- `feature/github-actions`- CI/CD pipeline setup 
 
 ## Individual Contributions
 
-### [Student 1 Name]
+### [Student 1 ]
 - Repository setup and configuration
 - GitHub Actions CI/CD pipeline implementation
 - Deployment setup and management
