@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Verify project structure
+      - name: Verify project files
         run: |
           echo "Checking required files..."
           test -f src/index.html
@@ -31,5 +31,9 @@ jobs:
         run: |
           grep -q "<!DOCTYPE html>" src/index.html
           echo "HTML validation passed"
+
+      - name: CI finished
+        run: echo "CI Pipeline completed successfully"
+
 
 
