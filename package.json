@@ -1,0 +1,15 @@
+{
+  "name": "devops_local_service_finder_app",
+  "version": "1.0.0",
+  "description": "A local service finder app",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "echo 'Project does not need server' && exit 0",
+    "build": "echo 'No build required for static site' && exit 0",
+    "test": "echo 'No tests yet' && exit 0",
+    "lint": "echo 'No lint setup' && exit 0"
+  },
+  "keywords": ["local", "service", "finder"],
+  "author": "Your Name",
+  "license": "MIT"
+}
