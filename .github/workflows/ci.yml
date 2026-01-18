@@ -16,29 +16,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Verify project structure
-      run: |
-        echo "Checking required files..."
-        test -f src/index.html
-        test -f src/styles/style.css
-        test -f src/scripts/app.js
-        test -f src/data/services.json
-        echo "All required files exist "
+      - name: Verify project structure
+        run: |
+          echo "Checking required files..."
+          test -f src/index.html || { echo "Missing index.html"; exit 1; }
+          test -f src/styles/style.css || { echo "Missing style.css"; exit 1; }
+          test -f src/scripts/app.js || { echo "Missing app.js"; exit 1; }
+          test -f src/data/services.json || { echo "Missing services.json"; exit 1; }
+          echo "All required files exist "
 
-    - name: Validate HTML file
-      run: |
-        echo "Validating HTML..."
-        grep -q "<!DOCTYPE html>" src/index.html
-        echo "HTML validation passed "
+      - name: Validate HTML file
+        run: |
+          grep -q "<!DOCTYPE html>" src/index.html || { echo "index.html missing <!DOCTYPE html>"; exit 1; }
+          echo "HTML validation passed "
 
-    - name: Validate JSON file
-      run: |
-        echo "Validating JSON..."
-        python -m json.tool src/data/services.json > /dev/null
-        echo "JSON is valid "
+      - name: Validate JSON file
+        run: |
+          python3 -m json.tool src/data/services.json > /dev/null || { echo "Invalid JSON in services.json"; exit 1; }
+          echo "JSON is valid "
 
-    - name: CI completed successfully
-      run: echo "CI Pipeline finished successfully "
+      - name: CI completed
+        run: echo "CI Pipeline finished successfully "
+
