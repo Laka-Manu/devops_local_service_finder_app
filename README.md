@@ -57,7 +57,13 @@ We implemented the following branching strategy:
 - Created main application logic (main.js) 
 - Implemented data loading and error handling
 
-### [Ranasinghe Arachchige Shashini Ruwanthika] - Frontend Developer
+### Ranasinghe Arachchige Shashini Ruwanthika - Frontend Developer
+- Designed and implemented UI layout (index.html)
+- Created responsive styling (style.css)
+- Developed service card components
+- Implemented contact buttons (Call/WhatsApp)
+- Created comprehensive README documentation
+- Ensured mobile responsiveness
 
 
 ## Setup Instructions
