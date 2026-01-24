@@ -1,9 +1,9 @@
 # devops_local_service_finder_app
 
 ## Group Information
-- **Student 1:** [Sandaru Amarasekara] - [ITBIN-2313-0008] - Role: Backend Developer
-- **Student 2:** [Lakshani Manusha] - [ITBIN-2313-0063] - Role: [DevOps/Release Manager]
-- **Student 3:** [Ranasinghe Arachchige Shashini Ruwanthika] - [ITBIN-2313-0095] - Role: [Frontend Developer ]
+- **Student 1:** Sandaru Amarasekara - ITBIN-2313-0008 - Role: Backend Developer
+- **Student 2:** Lakshani Manusha - ITBIN-2313-0063 - Role: DevOps/Release Manager
+- **Student 3:** Ranasinghe Arachchige Shashini Ruwanthika - ITBIN-2313-0095- Role: Frontend Developer 
 
 ## Project Description
 [Local Service Finder is a web-based platform that helps users discover and connect with trusted local service providers. Users can search for electricians, plumbers, and mechanics in their area, view ratings, and contact them directly via phone or WhatsApp.git]
@@ -18,7 +18,6 @@
 - Vercel for deployment
 
 ## Features
-<<<<<<< HEAD
 
 - Search services by name, category, or location 
 - Filter by service type (Electrician, Plumber, Mechanic) 
@@ -26,14 +25,12 @@
 - Direct call functionality 
 -  WhatsApp contact integration 
 - Responsive design for mobile and desktop 
-=======
 - Search services by name, category, or location
 - Filter by service type (Electrician, Plumber, Mechanic,etc.)
 - View provider ratings and experience
 - Direct call functionality
 - WhatsApp contact integration
 - Responsive design for mobile and desktop
->>>>>>> f9f7a689719f46ccb366e35d95e47b0f399e608c
 
 ## Branch Strategy
 We implemented the following branching strategy:
