@@ -42,7 +42,7 @@ We implemented the following branching strategy:
 
 ## Individual Contributions
 
-### [Lakshani Manusha] - DevOps/Release Manager 
+### Lakshani Manusha - DevOps/Release Manager 
 - Repository setup and configuration
 - GitHub Actions CI/CD pipeline implementation
 - Vercel deployment setup and management 
@@ -50,7 +50,7 @@ We implemented the following branching strategy:
 - Created .github/workflows/ci.yml and deploy.yml 
 - Managed pull request merges
 
-### [Sandaru Amarasekara] - Backend Developer 
+### Sandaru Amarasekara- Backend Developer 
 - Created service provider data structure (services.json) 
 - Implemented search and filter functionality 
 - Developed rating display system 
@@ -58,7 +58,7 @@ We implemented the following branching strategy:
 - Implemented data loading and error handling
 
 ### [Ranasinghe Arachchige Shashini Ruwanthika] - Frontend Developer
-- 
+
 
 ## Setup Instructions
 
