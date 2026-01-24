@@ -1,9 +1,9 @@
 # devops_local_service_finder_app
 
 ## Group Information
-- **Student 1:** [Sandaru Amarasekara] - [ITBIN-2313-0008] - Role: Backend Developer
-- **Student 2:** [Lakshani Manusha] - [ITBIN-2313-0063] - Role: [DevOps/Release Manager]
-- **Student 3:** [Ranasinghe Arachchige Shashini Ruwanthika] - [ITBIN-2313-0095] - Role: [Frontend Developer ]
+- **Student 1:** Sandaru Amarasekara - ITBIN-2313-0008 - Role: Backend Developer
+- **Student 2:** Lakshani Manusha- ITBIN-2313-0063 - Role: DevOps/Release Manager
+- **Student 3:** Ranasinghe Arachchige Shashini Ruwanthika - ITBIN-2313-0095 - Role: Frontend Developer 
 
 ## Project Description
 [Local Service Finder is a web-based platform that helps users discover and connect with trusted local service providers. Users can search for electricians, plumbers, and mechanics in their area, view ratings, and contact them directly via phone or WhatsApp.git]
