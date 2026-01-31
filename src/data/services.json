@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Kumar Electrical Services",
+    "category": "electrician",
+    "phone": "+94771234567",
+    "location": "Negombo",
+    "latitude": 7.2083,
+    "longitude": 79.8358,
+    "rating": 4.5,
+    "experience": "10 years",
+    "description": "Expert in home and commercial electrical work"
+  },
+  {
+    "id": 2,
+    "name": "Perera Plumbing",
+    "category": "plumber",
+    "phone": "+94772345678",
+    "location": "Colombo 7",
+    "latitude": 6.9271,
+    "longitude": 79.8612,
+    "rating": 4.8,
+    "experience": "8 years",
+    "description": "24/7 emergency plumbing services"
+  },
+  {
+    "id": 3,
+    "name": "Silva Auto Repairs",
+    "category": "mechanic",
+    "phone": "+94773456789",
+    "location": "Gampaha",
+    "latitude": 7.0873,
+    "longitude": 79.9990,
+    "rating": 4.3,
+    "experience": "15 years",
+    "description": "Certified mechanic for all vehicle types"
+  },
+  {
+    "id": 4,
+    "name": "Fernando Electrical",
+    "category": "electrician",
+    "phone": "+94774567890",
+    "location": "Kandy",
+    "latitude": 7.2906,
+    "longitude": 80.6337,
+    "rating": 4.6,
+    "experience": "12 years",
+    "description": "Industrial and residential electrical solutions"
+  },
+  {
+    "id": 5,
+    "name": "Jayasinghe Plumbing Co.",
+    "category": "plumber",
+    "phone": "+94775678901",
+    "location": "Negombo",
+    "latitude": 7.2167,
+    "longitude": 79.85,
+    "rating": 4.7,
+    "experience": "6 years",
+    "description": "Water tank installation and pipe repairs"
+  },
+  {
+    "id": 6,
+    "name": "Ranjith Auto Care",
+    "category": "mechanic",
+    "phone": "+94776789012",
+    "location": "Colombo 3",
+    "latitude": 6.9344,
+    "longitude": 79.8428,
+    "rating": 4.4,
+    "experience": "20 years",
+    "description": "Engine diagnostics and full servicing"
+  }
+]
