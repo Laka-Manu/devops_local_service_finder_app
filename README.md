@@ -39,6 +39,7 @@ We implemented the following branching strategy:
 - `feature/ui-design` - Frontend UI components 
 - `feature/service-data`- Backend data and search functionality 
 - `feature/github-actions`- CI/CD pipeline setup 
+- `feature/docker-containerization` – Docker setup and container management
 
 ## Individual Contributions
 
@@ -137,4 +138,32 @@ mkdir -p .github/workflows
 git add .
 git commit -m "chore: initial repository setup"
 git push origin develop
+
+#
+### Prerequisites 
+###- Docker installed: https://www.docker.com/get-started - Docker Compose installed 
+
+## Build and Run 
+```bash 
+
+# Build and start the container 
+docker compose up --build 
+
+# Visit the app 
+http://localhost:8080 
+
+# Stop the container 
+docker compose down 
+``` 
+### Docker Commands 
+```bash 
+# Build image only 
+docker build -t local-service-finder.
+
+# Check image size 
+docker images 
+
+# Check running containers 
+docker ps
+
 
