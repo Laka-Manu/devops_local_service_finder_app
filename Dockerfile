@@ -1,4 +1,3 @@
-# Use official nginx alpine image - lightweight and secure
 FROM nginx:alpine
 
 # Create non-root user for security
@@ -22,6 +21,9 @@ EXPOSE 80
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s \
   CMD wget --quiet --tries=1 --spider http://localhost:80 || exit 1
+
+# Switch to non-root user
+USER appuser
 
 # Run nginx
 CMD ["nginx", "-g", "daemon off;"]
